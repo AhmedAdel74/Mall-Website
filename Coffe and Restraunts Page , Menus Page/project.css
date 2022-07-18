@@ -1,0 +1,90 @@
+@import url('../css/Font.css');
+
+/*  ////////////////////////Navigation ////////////////*/
+
+
+.navxxx{
+    background: white;
+    padding: 0 2rem;
+    /*/////To Create A Responsive Navigation Bar /////////////*/
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+    /*/////To Create A Responsive Navigation Bar /////////////*/
+}
+.navxxx .menu{
+    justify-content: space-between;
+}
+
+.navxxx .tocollapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.navxxx .tocollapse .to-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0 ;
+}
+.navxxx .tocollapse .to-icons i {
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+.colls{
+    height: 30rem;
+}
+.navxxx .items{
+    
+    display: flex;
+    margin: 0;
+}
+.navxxx .items .link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
+}
+.navxxx .items .link:hover{
+    background-color: var(--midnight);
+}
+.navxxx .items .link:hover a{
+    color: var(--white);
+}
+
+.navxxx .brand a {
+    display: block;
+    font-size: 1.6rem;
+    padding: 1rem 0 ;
+    font-family: var(--Lexend_Deca);
+    font-size: 1.6rem;
+}
+.navxxx .gray{
+    color: var(--bg-color);
+}
+.navxxx .social {
+    padding: 1.4rem 0;
+}
+.navxxx .social i{
+    padding: 0 .2rem;
+}
+.navxxx .social i:hover{
+    color: #a1c4cf;
+}
+/* xxxx ////////////////////////Navigation //////////////// xxxx*/
+
+/*---------ViewPort less than or equal 750px------------*/
+@media only screen and (max-width:750px){
+    .navxxx .menu , .navxxx .items{
+        flex-direction: column;
+    }
+    .navxxx .tocollapse{
+        display: initial;
+    }
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+    
